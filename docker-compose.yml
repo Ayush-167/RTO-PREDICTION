@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  rto-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: rto_prediction_api
+    ports:
+      - "8000:8000"
+    environment:
+      - PYTHONUNBUFFERED=1
+    restart: unless-stopped
+    # For development with code changes:
+    # volumes:
+    #   - ./rto_api.py:/app/rto_api.py

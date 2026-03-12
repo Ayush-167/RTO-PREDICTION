@@ -1,0 +1,15 @@
+.git
+.idea
+__pycache__
+.pytest_cache
+*.pyc
+*.pyo
+*.egg-info
+.env
+.DS_Store
+catboost_info
+*.xlsx
+DATA_RTO8*.xlsx
+rto.ipynb
+.venv
+venv
